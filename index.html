@@ -63,7 +63,6 @@
                </li>
 
                <li class="item">
-                  
                   <div>
                      <a href="tel:+380961111111" class="contact-info link">
                         <div class="contact-way">
@@ -87,7 +86,7 @@
             <div class="conteiner">
                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                <div class="button-position">
-                  <button type="button" class="hero-button">
+                  <button type="button" class="hero-button" data-modal-open>
                      Замовити послугу
                   </button>
                </div>
@@ -171,8 +170,8 @@
                         width="370"
                      />
                      <div class="desktop-label">
-                     <p class="label-text">Декстопні додатки</p>
-                  </div>
+                        <p class="label-text">Декстопні додатки</p>
+                     </div>
                   </li>
                   <li class="item">
                      <img
@@ -584,5 +583,11 @@
             </div>
          </div>
       </footer>
+      <div class="modal-backdrop is-hidden" data-modal>
+         <div class="modal">
+            <div class="close-sign" data-modal-close>X</div>
+         </div>
+      </div>
+      <script src="./js/modal.js"></script>
    </body>
 </html>
