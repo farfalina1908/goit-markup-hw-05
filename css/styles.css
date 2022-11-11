@@ -227,19 +227,19 @@ html {
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(0, 0, 0, 0.2); 
+   background-color: rgba(0, 0, 0, 0.2);
    opacity: 1;
    visibility: visible;
-   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out; 
+   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
 }
- .modal-backdrop.is-hidden .modal {
+.modal-backdrop.is-hidden .modal {
    transform: scale(3.5);
-} 
+}
 .is-hidden {
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
-}  
+}
 .modal {
    position: absolute;
    top: 50%;
@@ -253,7 +253,6 @@ html {
       0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
    border-color: rgba(0, 0, 0, 0.1);
-  
 }
 
 .modal .close-sign {
@@ -265,9 +264,8 @@ html {
    width: 30px;
    height: 30px;
    top: 8px;
-   right: 8px; 
+   right: 8px;
 }
-
 
 /* section index*/
 /* features */
@@ -332,20 +330,12 @@ html {
 .our-cases {
    display: flex;
 }
- .pic {
-   display: block;
-   
-} 
 .pic {
    display: block;
-   
 }
-.pic {
-   display: block;
-   
-}
+
 .desktop-label {
-    display: block;
+   display: block;
    position: relative;
 }
 .smartphon-label {
@@ -636,7 +626,6 @@ html {
    margin-right: 30px;
    margin-bottom: 30px;
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
 }
 .portfolio-container .item:nth-child(3n) {
    margin-right: 0;
@@ -674,8 +663,9 @@ html {
 .portfolio-item-wrapper {
    display: block;
    position: relative;
+   overflow: hidden;
 }
-.portfolio-description {
+.portfolio-overlay {
    color: var(--primary-white-color);
    font-family: "Roboto", sans-serif;
    font-style: normal;
@@ -686,7 +676,7 @@ html {
    padding-top: 27px;
    letter-spacing: 0.03em;
    padding: 63px 24px;
-   
+
    margin: 0;
    position: absolute;
    width: 370px;
@@ -695,5 +685,9 @@ html {
    bottom: 0;
    right: 0;
    transform: translateY(100%);
-   overflow: hidden; 
+   transition: transform 250ms ease;
+}
+.portfolio-container .item:hover .portfolio-overlay,
+.portfolio-container .item:focus .portfolio-overlay {
+   transform: translateY(0);
 }
